@@ -1,0 +1,64 @@
+{
+  "name": "KPITemplate",
+  "type": "object",
+  "properties": {
+    "department_id": {
+      "type": "string",
+      "title": "Department ID"
+    },
+    "department_name": {
+      "type": "string",
+      "title": "Department Name"
+    },
+    "title": {
+      "type": "string",
+      "title": "Table Title"
+    },
+    "columns": {
+      "type": "array",
+      "title": "Table Columns",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "number",
+              "percent",
+              "text"
+            ]
+          }
+        }
+      }
+    },
+    "kpi_items": {
+      "type": "array",
+      "title": "KPI Row Items",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "department_id",
+    "department_name",
+    "title"
+  ]
+}
