@@ -7,8 +7,8 @@ const app = express();
 
 // ── CORS ───────────────────────────────────────────────
 const allowedOrigins = [
-  'http://localhost:5173',                  // local dev
-  'https://your-app.vercel.app',            // 👈 palitan ng actual Vercel URL mo
+  'http://localhost:5173',
+  'https://qms-app-five.vercel.app',
 ];
 
 app.use(cors({
