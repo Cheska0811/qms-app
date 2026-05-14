@@ -1,0 +1,77 @@
+{
+  "name": "DepartmentEntry",
+  "type": "object",
+  "properties": {
+    "department_id": {
+      "type": "string",
+      "title": "Department ID"
+    },
+    "department_name": {
+      "type": "string",
+      "title": "Department Name"
+    },
+    "period": {
+      "type": "string",
+      "title": "Period (YYYY-MM)"
+    },
+    "year": {
+      "type": "number",
+      "title": "Year"
+    },
+    "month": {
+      "type": "number",
+      "title": "Month"
+    },
+    "revenue": {
+      "type": "number",
+      "title": "Revenue"
+    },
+    "expenses": {
+      "type": "number",
+      "title": "Expenses"
+    },
+    "headcount": {
+      "type": "number",
+      "title": "Headcount"
+    },
+    "projects_completed": {
+      "type": "number",
+      "title": "Projects Completed"
+    },
+    "projects_in_progress": {
+      "type": "number",
+      "title": "Projects In Progress"
+    },
+    "customer_satisfaction": {
+      "type": "number",
+      "title": "Customer Satisfaction Score"
+    },
+    "net_profit": {
+      "type": "number",
+      "title": "Net Profit (Computed)"
+    },
+    "profit_margin": {
+      "type": "number",
+      "title": "Profit Margin % (Computed)"
+    },
+    "revenue_per_employee": {
+      "type": "number",
+      "title": "Revenue Per Employee (Computed)"
+    },
+    "expense_ratio": {
+      "type": "number",
+      "title": "Expense Ratio % (Computed)"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "department_id",
+    "department_name",
+    "period",
+    "year",
+    "month"
+  ]
+}
