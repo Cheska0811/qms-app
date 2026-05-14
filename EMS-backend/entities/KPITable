@@ -1,0 +1,83 @@
+{
+  "name": "KPITable",
+  "type": "object",
+  "properties": {
+    "department_id": {
+      "type": "string",
+      "title": "Department ID"
+    },
+    "department_name": {
+      "type": "string",
+      "title": "Department Name"
+    },
+    "period": {
+      "type": "string",
+      "title": "Period (YYYY-MM)"
+    },
+    "year": {
+      "type": "number",
+      "title": "Year"
+    },
+    "month": {
+      "type": "number",
+      "title": "Month"
+    },
+    "title": {
+      "type": "string",
+      "title": "Table Title"
+    },
+    "columns": {
+      "type": "array",
+      "title": "Columns",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "text",
+              "number",
+              "formula",
+              "result",
+              "status"
+            ]
+          },
+          "formula": {
+            "type": "string"
+          },
+          "width": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "title": "Rows",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "cells": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "department_id",
+    "department_name",
+    "period",
+    "year",
+    "month"
+  ]
+}
